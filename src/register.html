@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script cript src="https://kit.fontawesome.com/822f67e1ce.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/dist/style.css">
+  <link rel="stylesheet" href="/src/style.css">
+  <title>medicoApp</title>
+</head>
+
+<body class="bg-gray-50">
+  <header class="media">
+    <div class="logo">
+      <img src="/public/assets/logo.png" alt="">
+    </div>
+    <!---navbar link-------->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Specialistes</a></li>
+        <li><a href="About us.html">About us</a></li>
+        <li> <a href="consultation.html">Consultation</a></li>
+        <li><a href="login.html">login</a></li>
+      </ul>
+    </nav>
+     <div id="menu-btn" class="fas fa-bars"></div>
+  </header>
+  <!----home------->
+  <section class="home">
+    <div class="flex justify-center items-center h-screen w-screen pt-[15%]">
+      <div class="bg-white shadow-md rounded-lg w-full max-w-md p-6">
+        <h1 class="text-2xl font-bold text-center mb-6">Faite vous enregistrer ici </h1>
+        <!-- Google Login Button (mocked) -->
+        <button type="button"
+          class="w-full flex items-center justify-center gap-2 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 hover:bg-gray-100 transition mb-5">
+          <svg class="w-5 h-5" viewBox="0 0 48 48">
+            <g>
+              <path fill="#4285F4"
+                d="M24 9.5c3.15 0 5.68 1.31 6.99 2.41l5.12-5C32.77 3.52 28.73 2 24 2 14.84 2 7.06 7.8 3.69 15.09l6.88 5.35C12.34 13.89 17.74 9.5 24 9.5z" />
+              <path fill="#34A853"
+                d="M46.99 24.5c0-1.84-.17-3.61-.49-5.32H24v10.08h12.83c-.56 3.01-2.23 5.56-4.74 7.26l7.35 5.7C43.93 38.29 46.99 32.04 46.99 24.5z" />
+              <path fill="#FBBC05"
+                d="M10.57 28.44a15.03 15.03 0 010-8.88l-6.88-5.35A23.954 23.954 0 002 24c0 3.78.9 7.36 2.48 10.47l7.09-6.03z" />
+              <path fill="#EA4335"
+                d="M24 46c6.73 0 12.38-2.23 16.5-6.06l-7.35-5.7c-2.04 1.37-4.65 2.19-7.65 2.19-6.26 0-11.65-4.39-13.56-10.3l-7.09 6.03C7.06 40.2 14.84 46 24 46z" />
+            </g>
+          </svg>
+          <span>Sign up with Google</span>
+        </button>
+
+        <!-- Divider -->
+        <div class="relative flex items-center my-5">
+          <div class="flex-grow border-t border-gray-300"></div>
+          <span class="absolute left-1/2 -translate-x-1/2 bg-white px-2 text-sm text-gray-400">Or</span>
+        </div>
+
+        <form>
+          <!-- Name -->
+          <div class="mb-4">
+            <label for="name" class="block font-medium mb-1">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name"
+              class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" required
+              minlength="3">
+            <!-- Error message placeholder -->
+            <!-- <p class="text-red-500 text-xs mt-1">Name must be at least 3 characters long.</p> -->
+          </div>
+
+          <!-- Email -->
+          <div class="mb-4">
+            <label for="email" class="block font-medium mb-1">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email address"
+              class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" required>
+            <!-- <p class="text-red-500 text-xs mt-1">Please enter a valid email.</p> -->
+          </div>
+
+          <!-- Password -->
+          <div class="mb-4">
+            <label for="contact" class="block font-medium mb-1">contact</label>
+            <input id="number" name="number" type="number" placeholder="Enter your contact"
+              class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" required
+              minlength="8">
+            <!-- <p class="text-red-500 text-xs mt-1">please enter a valid contact</p>-->
+          </div>
+
+          <div class="mb-6">
+            <label for="date" class="block font-medium mb-1">Date</label>
+            <input id="date" name="date" type="date" placeholder="Enter your date of birth"
+              class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" required
+              minlength="8">
+            <!-- <p class="text-red-500 text-xs mt-1">Please enter a valid date</p> -->
+          </div>
+          <button type="submit"
+            class="w-full bg-blue-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition">Envoyer</button>
+
+          <div class="mt-5 text-sm flex justify-center items-center gap-2">
+            <p>Already have account?</p>
+            <a href="consultation.html" class="text-blue-500 hover:underline">Sign In</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  </section>
+  <!--------body doctors----->
+  <section class="first-card-content">
+    <!--first card content-->
+    <div>
+      <h1>Different medecin a consulter</h1>
+      
+    </div>
+    <!--card div and button-->
+    <div class="card-content">
+      <!--cart div-->
+      <div class="cards">
+        <article>
+          <!--image of card content-->
+          <div class="card-image">
+            <img src="/public/assets/bonjour.png" alt="">
+          </div>
+          <!--card main content-->
+          <div>
+            <!--image of company logo-->
+            <div class="company">
+              <div class="company-logo">
+                <img
+                  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png?auto=format%2Ccompress&dpr=3&w=24&h=24"
+                  alt="company">
+              </div>
+              <p>hospital new seven</p>
+            </div>
+            <h2>Specialiste docteur Dentiste</h2>
+            <br>
+            <br>
+            <p class="Course-level">Consulter-vous svp</p>
+          </div>
+        </article>
+
+
+        <article>
+          <!--image of card content-->
+          <div class="card-image">
+            <img src="/public/assets/nathalie.png" alt="">
+          </div>
+          <!--card main content-->
+          <div>
+            <!--image of company logo-->
+            <div class="company">
+              <div class="company-logo">
+                <img
+                  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=3&w=24&h=24"
+                  alt="company">
+              </div>
+              <p>hospital new seven</p>
+            </div>
+            <h2>Docteur en chirugie</h2>
+            <br>
+            <i class="fa-solid fa-award"></i p class="certificates"> Preparation for consultation</p>
+            <p class="Course-level">Doctors.Specialization</p>
+          </div>
+        </article>
+
+
+        <article>
+          <!--image of card content-->
+          <div class="card-image">
+            <img src="/public/assets/nathy.png" alt="">
+          </div>
+          <!--card main content-->
+          <div>
+            <!--image of company logo-->
+            <div class="company">
+              <div class="company-logo">
+                <img
+                  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/89/63fef0315140268d5c0f66eee8e85e/VU_360x360.png?auto=format%2Ccompress&dpr=3&w=24&h=24"
+                  alt="company">
+              </div>
+              <p>Docteur cardiologue</p>
+            </div>
+            <h2>consulter vous ici</h2>
+            <br>
+            <br>
+            <p class="Course-level">because.specialization</p>
+          </div>
+        </article>
+      </div>
+      <div class="btn">
+          <button class="show-more btn-trial">Submit here</button> <button class="btn-trial "> le choix avec nous</button>
+      </div>
+    
+    </div>
+  </section>
+
+
+  <!---footer---->
+  <footer>
+    <section class="footer">
+      <div class="section-container">
+        <div class="boxing">
+          <h3>quick links</h3>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>home</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>services</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>about</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>doctors</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>book</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>review</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>blogs</a>
+        </div>
+        <div class="boxing">
+          <h3>our services</h3>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>dental care</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>message therapy</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>cardiology</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>doctors</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>diagnosis</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i>ambulence services</a>
+        </div>
+        <div class="boxing">
+          <h3>contact info</h3>
+          <a href="#"><i class="fa-solid fa-phone"></i>+237-693-309-173</a>
+          <a href="#"><i class="fa-solid fa-phone"></i>+237-693-309-177</a>
+          <a href="#"><i class="fa-solid fa-envelope"></i>christelle@gmail.com</a>
+          <a href="#"><i class="fa-solid fa-envelope"></i>christellefana@gmail.com</a>
+          <a href="#"><i class="fa-solid fa-location-dot"></i>yaounde-edea</a>
+        </div>
+        <div class="boxing">
+          <h3>follow us</h3>
+          <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
+          <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i>pinterest</a>
+        </div>
+      </div>
+      <div class="credit">thanks<span> for your visit</span> | all rights reserved </div>
+    </section>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

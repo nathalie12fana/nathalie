@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('/public/assets/istockphoto-2158610739-1024x1024.jpg')] bg-center bg-cover bg-no-repeat h-[100vh] w-screen relative ">
+  <div class="w-screen h-[100vh]  bg-black opacity-75 absolute top-0 left-0">
+  <div class="flex justify-center items-center h-screen w-screen">
+    <div class=" bg-white shadow-md rounded-lg w-full max-w-md p-6">
+      <!-- Logo -->
+      <div class="flex justify-center items-center mb-2">
+        <a href="/">
+          <!-- Replace the src below with your actual logo source -->
+          <img src="/public/assets/logo.png" alt="Logo" class="h-10" />
+        </a>
+      </div>
+      <h1 class="text-2xl font-bold text-center mb-5">Login Page</h1>
+      
+      <!-- Google Login Button (mocked) -->
+      <button type="button" class="w-full flex items-center justify-center gap-2 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 hover:bg-gray-100 transition mb-5">
+        <svg class="w-5 h-5" viewBox="0 0 48 48"><g><path fill="#4285F4" d="M24 9.5c3.15 0 5.68 1.31 6.99 2.41l5.12-5C32.77 3.52 28.73 2 24 2 14.84 2 7.06 7.8 3.69 15.09l6.88 5.35C12.34 13.89 17.74 9.5 24 9.5z"/><path fill="#34A853" d="M46.99 24.5c0-1.84-.17-3.61-.49-5.32H24v10.08h12.83c-.56 3.01-2.23 5.56-4.74 7.26l7.35 5.7C43.93 38.29 46.99 32.04 46.99 24.5z"/><path fill="#FBBC05" d="M10.57 28.44a15.03 15.03 0 010-8.88l-6.88-5.35A23.954 23.954 0 002 24c0 3.78.9 7.36 2.48 10.47l7.09-6.03z"/><path fill="#EA4335" d="M24 46c6.73 0 12.38-2.23 16.5-6.06l-7.35-5.7c-2.04 1.37-4.65 2.19-7.65 2.19-6.26 0-11.65-4.39-13.56-10.3l-7.09 6.03C7.06 40.2 14.84 46 24 46z"/></g></svg>
+        <span>Sign in with Google</span>
+      </button>
+      
+      <!-- Divider -->
+      <div class="relative flex items-center my-5">
+        <div class="flex-grow border-t border-gray-300"></div>
+        <span class="absolute left-1/2 -translate-x-1/2 bg-white px-2 text-sm text-gray-400">Or</span>
+      </div>
+      
+      <form>
+        <!-- Email -->
+        <div class="mb-4">
+          <label for="email" class="block font-medium mb-1">Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email address" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" required>
+          <!-- <p class="text-red-500 text-xs mt-1">Please enter a valid email.</p> -->
+        </div>
+        
+        <!-- Password -->
+        <div class="mb-6">
+          <label for="password" class="block font-medium mb-1">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter your password" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" required minlength="3">
+          <!-- <p class="text-red-500 text-xs mt-1">Password field required.</p> -->
+        </div>
+        
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition ">Sign In</button>
+        
+        <div class="mt-5 text-sm flex justify-center items-center gap-2">
+          <p>Don&apos;t have account?</p>
+          <a href="index.html" class="text-blue-500 hover:underline">Sign Up</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
