@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/style.css">
-    <link rel="stylesheet" href= "/src/style.css">
+    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href= "../src/style.css">
     <script src="https://kit.fontawesome.com/822f67e1ce.js" crossorigin="anonymous"></script>
     <title>medicoApp</title>
 </head>
 <body>
-    <header class="media">
-        <!-----logo name----->
-    <div class="logo">
-        <img src="/public/assets/logo.png" alt="" ></div>
-
-       <!---navbar link-------->
-       <nav class="menu none">
-        <ul>
-            <li><a href="consultation.html">Consultation</a></li>
-            <li> <a href="about us.html">About us</a></li>
-            <li><a href="register.html">register</a></li>
-            <li><a href="login.html">login</a></li>
-        </ul>
-       </nav>
-       <div id="menu-btn" class="fas fa-bars"></div>
-</header>
+   <!-- header section -->
+ <div id="navbar">
+    
+ </div>
+      
+      <!-- Sidebar Mobile (cachée par défaut) -->
+      <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 p-4 space-y-4 md:hidden">
+        <button id="close-menu" class="text-right w-full text-2xl">
+          &times;
+        </button>
+        <a href="index.html" class="block text-gray-800">Spécialistes</a>
+        <a href="register.html" class="block text-gray-800">Register</a>
+        <a href="consultation.html" class="block text-gray-800">Consultation</a>
+        <a href="login.html" class="block text-gray-800">Login</a>
+      </div>
 <!---home---->
 <section class="home">
     <div class="home-infos">
@@ -91,47 +90,8 @@
    
 <!-------footer-contact------->
 
-<footer>
-  <section class="footer">
-    <div class="section-container">
-        <div class="boxing">
-            <h3>quick links</h3>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>home</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>services</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>about</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>doctors</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>book</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>review</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>blogs</a>   
-        </div>
-        <div class="boxing">
-            <h3>our services</h3>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>dental care</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>message therapy</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>cardiology</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>doctors</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>diagnosis</a>
-            <a href="#"><i class="fa-solid fa-chevron-right"></i>ambulence services</a>         
-        </div>
-        <div class="boxing">
-            <h3>contact info</h3>
-            <a href="#"><i class="fa-solid fa-phone"></i>+237-693-309-173</a>
-            <a href="#"><i class="fa-solid fa-phone"></i>+237-693-309-177</a>
-            <a href="#"><i class="fa-solid fa-envelope"></i>christelle@gmail.com</a>
-            <a href="#"><i class="fa-solid fa-envelope"></i>christellefana@gmail.com</a>
-            <a href="#"><i class="fa-solid fa-location-dot"></i>yaounde-edea</a>            
-        </div>
-         <div class="boxing">
-            <h3>follow us</h3>
-            <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
-            <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
-            <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
-            <a href="#"><i class="fa-brands fa-pinterest"></i>pinterest</a>
-        </div>
-    </div>
-   <div class="credit">thanks<span> for your visit</span> | all rights reserved </div>
-  </section>
+<footer id="myfooter">
+
 </footer>
 <script src="index.js"></script>
 </body>

@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: Poppins,Verdana, Geneva, Tahoma, sans-serif;
 }
+html{
+    overflow-x: hidden;
+}
 header{
     display: flex;
     align-items: center;
@@ -508,13 +511,16 @@ margin: 20px 0;
     
 }
     .footer{
-    margin: auto;
-    width: 100vw;
+    
+    
     background-color: #000000c5;
     
     
 }
-
+.fcontainer{
+    margin: auto;
+    width: 70%;
+}
 
 
 /* about sus styles */
@@ -530,7 +536,8 @@ margin: 20px 0;
    
 }
 .about-us-text{
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
 }
 .about-us-image{
     width: 40%;
@@ -561,32 +568,36 @@ h2{
     font-weight: bold;
     font-size: 25px;
 }
-.nos-medecin{
-    height: 60vh;
-}
+
 .text-medecin{
     width: 70%;
     margin:auto;
     padding: 30px 0px;
 }
 .images-medecin{
-width: 70%;
+    width: 70%;
     margin:auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    min-height: 50vh;
 }
 .images-medecin article{
-    width: 20%;
-    min-width: 200px;
+    width: 100%;
+    max-width: 300px;
 }
 .images-medecin img{
     width: 100%;
 }
-
-.contact-form>h1{
-    text-align: center;
+.contact-form{
+background: #136edd17;
+min-height: 80vh;
+justify-content: center;
+align-items: center;
+display: flex;
 }
+
 .form{
     margin: auto;
     width: 70%;
@@ -599,12 +610,39 @@ width: 70%;
 }
 .h1-form{
     color: #235a9a;
+
+
+
+}
+h1{
+    font-size: 2rem;
 }
 .form form{
     width: 40%;
+}
+@media(max-width:768px){
+    .form form,.form-text{
+        width: 100%;
+    }
+    .fcontainer{
+        text-align: center;
+    }
 }
 .form form input,textarea{
 border: 1px solid black;
 width: 100%;
 padding: 5px 10px;
+}
+.mobile-menu{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.red{
+    color: red;
+    font-size: 18px;
+}
+
+footer a{
+    transition: all 0.3s ease-in-out;
 }

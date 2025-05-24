@@ -4,29 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/style.css">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/822f67e1ce.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
-<body>
-    <header class="media shadow-lg">
-        <div class="logo">
-            <img src="/public/assets/logo.png" alt="">
-        </div>
+<body class="overflow-x-hidden">
 
-        <!---navbar link-------->
-        <nav class="menu ">
-            <ul>
-                <li><a href="index.html">Specialistes</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li> <a href="consultation.html">Consultation</a></li>
-                <li><a href="login.html">login</a></li>
-            </ul>
-        </nav>
-         <div id="menu-btn" class="fas fa-bars"></div>
-    </header>
+<!-- header section -->
+ <div id="navbar">
+    
+ </div>
+
+  
+
+<!--hero section-->
+
     <section class="" id="main">
         <div class="about-us">
             <div class="about-us-text">
@@ -52,25 +46,28 @@
 
             </div>
 
-            <div class="about-us-image sm:none">
-                <img src="/public/assets/medecin.png" alt="image">
+            <div class="about-us-image hidden md:block">
+                <img src="../public/assets/medecin.png" alt="image">
             </div>
 
         </div>
     </section>
+    <!-- section animation -->
     <section>
         <div class="images flex">
 
-            <img src="/public/assets/image_1.png" alt="">
-            <img src="/public/assets/image_2.png" alt="">
-            <img src="/public/assets/image_3.png" alt="">
-            <img src="/public/assets/image_4.png" alt="">
-            <img src="/public/assets/image_5.png" alt="">
+            <img src="../public/assets/image_1.png" alt="">
+            <img src="../public/assets/image_2.png" alt="">
+            <img src="../public/assets/image_3.png" alt="">
+            <img src="../public/assets/image_4.png" alt="">
+            <img src="../public/assets/image_5.png" alt="">
 
         </div>
     </section>
 
-    <section class="nos-medecins">
+<!-- Nos medecis -->
+
+    <section class="nos-medecins  items-center justify-center flex flex-col">
         <div class="text-medecin">
             <h1 class="h1">
                 Nos Medecins
@@ -84,14 +81,14 @@
             </p>
         </div>
 
-        <div class="images-medecin">
+        <div class="images-medecin container mx-auto px-4">
             <article>
                 <div class="img">
                     <img src="../public/assets/medecin1.png" alt="">
                 </div>
                 <div class="text">
                     <h2> John Kanga</h2>
-                    <p>
+                    <p class="text-gray-600">
                         Chirugien
                     </p>
                 </div>
@@ -102,7 +99,7 @@
                 </div>
                 <div class="text">
                     <h2> Blaise Bakok</h2>
-                    <p>
+                    <p class="text-gray-600">
                         neurologue
                     </p>
                 </div>
@@ -113,7 +110,7 @@
                 </div>
                 <div class="text">
                     <h2> Linda Njonkam </h2>
-                    <p>
+                    <p class="text-gray-600">
                         Nephrologue
                     </p>
                 </div>
@@ -126,7 +123,7 @@
                     <h2>
                         Nathalie Toukam
                     </h2>
-                    <p>
+                    <p class="text-gray-600">
                         Cardiologue
                     </p>
 
@@ -136,13 +133,14 @@
     </section>
 
 
+<!-- Form contact -->
+
     <section class="contact-form">
 
-        <h1>
-            Vous avez besoin de nous contacter, Remplissez ce formulaire !
-        </h1>
-        <div class="form">
-            <div class="text-form">
+        
+        <div class="form flex flex-col md:flex-row md:space-x-12">
+            
+            <div class="text-form w-full md:w-1/2 form-text">
                 <h1 class="h1-form">
                     Centre de médecine de famille E-Santé Cameroun
                 </h1>
@@ -175,6 +173,7 @@
             </div>
 
             <form action="">
+                <h1>Hello, laissez nous un message</h1>
                 <label for="name">
                     <p>Nom</p>
                     <input type="text">
@@ -204,47 +203,8 @@
 
 
     <!-------footer-contact------->
-    <footer>
-        <section class="footer" id="footer">
-            <div class="section-container">
-                <div class="boxing">
-                    <h3>quick links</h3>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>home</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>services</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>about</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>doctors</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>book</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>review</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>blogs</a>
-                </div>
-                <div class="boxing">
-                    <h3>our services</h3>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>dental care</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>message therapy</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>cardiology</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>doctors</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>diagnosis</a>
-                    <a href="#"><i class="fa-solid fa-chevron-right"></i>ambulence services</a>
-                </div>
-                <div class="boxing">
-                    <h3>contact info</h3>
-                    <a href="#"><i class="fa-solid fa-phone"></i>+237-693-309-173</a>
-                    <a href="#"><i class="fa-solid fa-phone"></i>+237-693-309-177</a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i>christelle@gmail.com</a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i>christellefana@gmail.com</a>
-                    <a href="#"><i class="fa-solid fa-location-dot"></i>yaounde-edea</a>
-                </div>
-                <div class="boxing">
-                    <h3>follow us</h3>
-                    <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
-                    <a href="#"><i class="fa-brands fa-pinterest"></i>pinterest</a>
-                </div>
-            </div>
-            <div class="credit">thanks<span> for your visit</span> | all rights reserved </div>
-        </section>
+    <footer id="myfooter">
+
     </footer>
     <script src="index.js"></script>
 
